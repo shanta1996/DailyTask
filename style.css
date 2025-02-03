@@ -1,0 +1,206 @@
+body {
+  background-color: #221f1f;
+  font-family: "Ubuntu", serif;
+  color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main{
+    padding-bottom: 40px;
+}
+.title {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.title .span {
+  color: teal;
+}
+.container {
+  background-color: rgb(237, 233, 233);
+  max-width: 600px;
+  margin-inline: auto;
+  color: black;
+  border-radius: 15px;
+  padding: 50px;
+  margin-top: 50px;
+ 
+}
+.container .imgDiv {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.container .imgDiv img {
+  height: 70px;
+  width: 70px;
+  /* vertical-align: middle; */
+  object-fit: cover;
+}
+.subtitle {
+  font-size: 30px;
+  /* text-align: center; */
+  /* font-weight: bolder; */
+  font-weight: 900;
+}
+.container .progress-para{
+    font-size: 20px;
+    color: gray;
+    margin-top: 20px;
+}
+.progress-bar{
+    height: 30px;
+    /* background-color: teal; */
+    background-color: rgb(142, 185, 185);
+    border-radius: 50px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.progress-value{
+    height: 100%;
+    width: 0%;
+    background-color: teal;
+    border-radius: 50px;
+    color: rgb(244, 239, 239);
+    display: flex; 
+    align-items: center; 
+    justify-content: start;
+    overflow: hidden;
+    /* padding-left: 20px; */
+}
+.numspan{
+    padding-left: 20px;
+}
+.error{
+color: salmon;
+opacity: 0;
+/* padding-top: 40px; */
+/* background-color: red; */
+margin-top: 30px;
+}
+.goal-container{
+border: 1px solid teal;
+background-color: white;
+/* padding: 20px; */
+padding-inline: 20px;
+height: 70px;
+display: flex; 
+align-items: center;
+border-radius: 10px;
+margin-top: 40px;
+overflow: hidden;
+}
+.goal-container .custom-checkbox{
+border-radius: 50%;
+height: 20px;
+width: 20px;
+border: 1px solid teal;
+flex-shrink: 0;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.goal-container .custom-checkbox .check{
+font-size: 14px;
+color: white;
+/* display: none; */
+}
+input{
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    background-color: white;
+    font-family: inherit;
+    outline: none;
+    /* background-color: red; */
+    flex-grow: 1;
+    align-self: stretch;
+}
+input::placeholder{
+    /* color: teal; */
+}
+.bottom-para{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 40px;
+}
+.bottom-love{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.delIcon .icon{
+    color: salmon;
+    cursor: pointer;
+    font-size: 20px;
+    /* display: none; */
+}
+.dIcon{
+    /* display: block; */
+}
+.completed .custom-checkbox{
+    background-color: teal;
+}
+/* .completed .check{
+    display: block;
+    color: white;
+} */
+.completed input{
+    color: teal;
+    text-decoration: line-through;
+}
+.blockError{
+    opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+
+  .title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .subtitle {
+    font-size: 25px;
+  }
+  .container {
+    padding: 20px;
+  }
+  .goal-container{
+    height: 50px;
+    padding-inline: 10px;
+    margin-top: 35px;
+    /* overflow: hidden; */
+    }
+    .bottom-para{
+        margin-top: 30px;
+    }
+    .bottom-love{
+        margin-top: 20px;
+    }
+    input{
+        font-size: 14px;
+    }
+    .container .progress-para{
+        font-size: 18px;
+        /* text-align: center; */
+        /* padding-left: 15px; */
+    }
+    .container .imgDiv {
+     /* justify-content: center; */
+      }
+      .error{
+        top: 33%;
+      }
+      .progress-bar{
+        height: 25px;
+      }
+}
