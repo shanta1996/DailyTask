@@ -71,9 +71,11 @@ main{
     justify-content: start;
     overflow: hidden;
     /* padding-left: 20px; */
+    transition: width 0.3s ease-in-out;
 }
 .numspan{
     padding-left: 20px;
+    min-width: max-content;
 }
 .error{
 color: salmon;
